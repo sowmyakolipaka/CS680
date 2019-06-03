@@ -1,0 +1,2 @@
+Input
+This test file 2

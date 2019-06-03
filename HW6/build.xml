@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="hw06" default="run" basedir=".">
+	<property environment="env" />
+	<property name="junit" value="${env.JUNIT}" />
+	<property name="hamcrest" value="${env.HAMCREST_CORE}" />
+
+
+
+	<target name="run" depends="build">
+		<echo> -------------------------------------- Running Test files-------------------------------------------------------------</echo>	
+							
+		<junit>
+			
+			<batchtest fork="yes">
+					<fileset dir="test/src">
+					<include name="**/*Test.java" />
+				</fileset>
+			</batchtest>
+			<classpath>
+				<path location="${junit}" />
+				<path location="${hamcrest}" />
+				<path location="bin" />
+				<path location="test/bin" />
+				<path location="." />
+			</classpath>
+			<formatter type="plain" usefile="false" />
+		</junit>
+
+	</target>
+
+	<target name="build">
+	<echo> -------------------------------------- BUILDING FILES-------------------------------</echo>
+	<echo> -------------------------------------- Deleting bin and test/bin--------------------------------------------------------------</echo>	
+		<delete dir="bin" />
+		<delete dir="test/bin" />
+		<echo> -------------------------------------- Creating Bin and test bin-------------------------------</echo>
+		<mkdir dir="bin" />
+		<mkdir dir="test/bin" />
+		
+	<echo> -------------------------------------- COMPILING--------------------------------------------------------------</echo>	
+	<javac srcdir="src" destdir="bin" includeantruntime="false" />
+		<javac srcdir="test/src" destdir="test/bin" includeantruntime="false">
+			<classpath>
+				<path location="${junit}" />
+				<path location="${hamcrest}" />
+				<path location="bin" />
+				<path location="test/bin" />
+				<path location="." />
+			</classpath>
+		</javac>
+	</target>
+
+
+</project>

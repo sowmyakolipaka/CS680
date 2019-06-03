@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="HW1/src"/>
+	<classpathentry kind="src" path="HW1/test/src"/>
+	<classpathentry kind="src" path="HW10/src"/>
+	<classpathentry kind="src" path="HW12/src"/>
+	<classpathentry kind="src" path="HW12/test/src"/>
+	<classpathentry kind="src" path="HW13/src"/>
+	<classpathentry kind="src" path="HW13/test/src"/>
+	<classpathentry kind="src" path="HW2/src"/>
+	<classpathentry kind="src" path="HW2/test/src"/>
+	<classpathentry kind="src" path="HW3/src"/>
+	<classpathentry kind="src" path="HW3/test/src"/>
+	<classpathentry kind="src" path="HW5/src"/>
+	<classpathentry kind="src" path="HW5/test/src"/>
+	<classpathentry kind="src" path="HW6/src"/>
+	<classpathentry kind="src" path="HW6/test/src"/>
+	<classpathentry kind="src" path="HW7/src"/>
+	<classpathentry kind="src" path="HW7/test/src"/>
+	<classpathentry kind="src" path="HW8/src"/>
+	<classpathentry kind="src" path="HW8/test/src"/>
+	<classpathentry kind="src" path="HW9/src"/>
+	<classpathentry kind="src" path="HW9/test/src"/>
+	<classpathentry kind="lib" path="software/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="software/junit.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
